@@ -58,46 +58,35 @@ export default function CTASection() {
 
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="mb-8"
-        >
-          <div className="inline-block bg-white/20 backdrop-blur-sm rounded-full px-6 py-2 mb-8">
-            <p className="text-white font-semibold text-sm uppercase tracking-wider">
-              Let&apos;s Get Started
-            </p>
-          </div>
-        </motion.div>
-
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.1 }}
+          transition={{ duration: 0.8 }}
           className="text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-8 leading-tight"
         >
           Contact Us
         </motion.h2>
 
-        <motion.p
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-2xl md:text-3xl text-white/80 mb-14 leading-relaxed font-light"
+          transition={{ duration: 0.8, delay: 0.1 }}
+          className="text-2xl md:text-3xl text-white/80 mb-14 leading-relaxed font-light max-w-4xl mx-auto"
         >
-          Get in touch to start your SOC 2 journey
-        </motion.p>
+          <p className="mb-4">Start your SOC 2 journey.</p>
+          <p className="text-xl md:text-2xl">
+            Discover how founders are turning compliance into a growth advantage — unlocking enterprise deals, investor confidence, and customer trust in weeks, not months.
+          </p>
+        </motion.div>
 
         {/* Typeform Embed */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.3 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
           className="mb-8"
         >
           <div 
@@ -112,7 +101,7 @@ export default function CTASection() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.4 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
           className="flex flex-col items-center gap-4 text-white/80"
         >
           <span className="text-lg">Prefer email?</span>

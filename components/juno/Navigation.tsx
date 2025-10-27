@@ -82,13 +82,6 @@ export default function Navigation() {
                   {item.label}
                 </a>
               ))}
-              <Button
-                onClick={() => scrollToSection("#contact")}
-                size="sm"
-                className="bg-[#00986E] hover:bg-[#00B388] text-white rounded-full px-6"
-              >
-                Contact Us
-              </Button>
             </div>
 
             {/* Mobile Menu Button */}
@@ -130,12 +123,6 @@ export default function Navigation() {
                   {item.label}
                 </a>
               ))}
-              <Button
-                onClick={() => scrollToSection("#contact")}
-                className="w-full bg-[#00986E] hover:bg-[#00B388] text-white rounded-full"
-              >
-                Contact Us
-              </Button>
             </div>
           </motion.div>
         )}

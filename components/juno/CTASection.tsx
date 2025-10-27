@@ -3,8 +3,25 @@
 import { motion } from "framer-motion";
 import { Calendar, Mail, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useEffect } from "react";
 
 export default function CTASection() {
+  useEffect(() => {
+    // Load Typeform embed script
+    const script = document.createElement('script');
+    script.src = '//embed.typeform.com/next/embed.js';
+    script.async = true;
+    document.head.appendChild(script);
+
+    return () => {
+      // Cleanup script on component unmount
+      const existingScript = document.querySelector('script[src="//embed.typeform.com/next/embed.js"]');
+      if (existingScript) {
+        document.head.removeChild(existingScript);
+      }
+    };
+  }, []);
+
   return (
     <section className="relative py-40 px-6 overflow-hidden bg-gradient-to-br from-[#0A4733] via-[#00986E] to-[#00B388]">
       {/* Animated background elements */}
@@ -105,6 +122,21 @@ export default function CTASection() {
               hello@usejuno.co
             </a>
           </div>
+        </motion.div>
+
+        {/* Typeform Embed */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="mt-16"
+        >
+          <div 
+            data-tf-live="01K8KV5ABBZH039MSAQ6ZGPS2A"
+            className="w-full max-w-4xl mx-auto"
+            style={{ height: '600px' }}
+          />
         </motion.div>
       </div>
     </section>

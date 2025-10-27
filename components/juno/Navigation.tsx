@@ -77,7 +77,11 @@ export default function Navigation() {
                     e.preventDefault();
                     scrollToSection(item.href);
                   }}
-                  className="text-[#0A4733] hover:text-[#00986E] transition-colors duration-300 font-medium"
+                  className={`transition-all duration-300 font-medium ${
+                    item.label === 'Contact'
+                      ? 'bg-[#00986E] hover:bg-[#00B388] text-white px-4 py-2 rounded-full'
+                      : 'text-[#0A4733] hover:text-[#00986E]'
+                  }`}
                 >
                   {item.label}
                 </a>
@@ -118,7 +122,11 @@ export default function Navigation() {
                     e.preventDefault();
                     scrollToSection(item.href);
                   }}
-                  className="block text-lg text-[#0A4733] hover:text-[#00986E] transition-colors duration-300 font-medium py-2"
+                  className={`block text-lg transition-colors duration-300 font-medium py-2 ${
+                    item.label === 'Contact'
+                      ? 'bg-[#00986E] hover:bg-[#00B388] text-white px-4 py-3 rounded-full text-center'
+                      : 'text-[#0A4733] hover:text-[#00986E]'
+                  }`}
                 >
                   {item.label}
                 </a>

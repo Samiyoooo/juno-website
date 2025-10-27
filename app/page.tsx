@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useState } from "react";
 import Navigation from "../components/juno/Navigation";
 import HeroSection from "../components/juno/HeroSection";

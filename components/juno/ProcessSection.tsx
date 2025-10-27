@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { Search, Lightbulb, Shield, Trophy } from "lucide-react";
 

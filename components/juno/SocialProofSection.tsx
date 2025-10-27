@@ -64,7 +64,7 @@ export default function SocialProofSection() {
                 </div>
 
                 <p className="text-2xl text-[#0A4733] mb-8 leading-relaxed font-medium">
-                  "{testimonial.quote}"
+                  &ldquo;{testimonial.quote}&rdquo;
                 </p>
 
                 <div className="flex items-center gap-4">

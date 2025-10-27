@@ -50,7 +50,7 @@ export default function CTASection() {
         >
           <div className="inline-block bg-white/20 backdrop-blur-sm rounded-full px-6 py-2 mb-8">
             <p className="text-white font-semibold text-sm uppercase tracking-wider">
-              Let's Get Started
+              Let&apos;s Get Started
             </p>
           </div>
         </motion.div>

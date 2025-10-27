@@ -92,6 +92,16 @@ Scale with confidence.
           className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
 
           <Button
+            onClick={() => {
+              const element = document.querySelector('#contact');
+              if (element) {
+                element.scrollIntoView({ 
+                  behavior: "smooth",
+                  block: "start",
+                  inline: "nearest"
+                });
+              }
+            }}
             size="lg"
             className="bg-[#00986E] hover:bg-[#00B388] text-white text-xl px-12 py-8 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 group">
 

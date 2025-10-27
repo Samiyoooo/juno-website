@@ -79,9 +79,7 @@ export default function CTASection() {
           transition={{ duration: 0.8, delay: 0.1 }}
           className="text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-8 leading-tight"
         >
-          Ready to start your
-          <br />
-          SOC 2 journey?
+          Contact Us
         </motion.h2>
 
         <motion.p
@@ -91,52 +89,40 @@ export default function CTASection() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-2xl md:text-3xl text-white/80 mb-14 leading-relaxed font-light"
         >
-          Book a free 20-minute readiness call
-          <br />
-          to see where you stand.
+          Get in touch to start your SOC 2 journey
         </motion.p>
-
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          className="flex flex-col items-center gap-6"
-        >
-          <Button
-            size="lg"
-            className="bg-white hover:bg-gray-100 text-[#00986E] text-xl px-12 py-8 rounded-full shadow-2xl hover:scale-105 transition-all duration-300 font-semibold group"
-          >
-            <Calendar className="w-6 h-6 mr-3" />
-            Book My Call
-            <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" />
-          </Button>
-
-          <div className="flex flex-col sm:flex-row items-center gap-4 text-white/80">
-            <span className="text-lg">Prefer email?</span>
-            <a
-              href="mailto:hello@usejuno.co"
-              className="flex items-center gap-2 text-white hover:text-[#E0C36C] transition-colors duration-300 text-lg font-medium group"
-            >
-              <Mail className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
-              hello@usejuno.co
-            </a>
-          </div>
-        </motion.div>
 
         {/* Typeform Embed */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="mt-16"
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="mb-8"
         >
           <div 
             data-tf-live="01K8KV5ABBZH039MSAQ6ZGPS2A"
             className="w-full max-w-4xl mx-auto"
             style={{ height: '600px' }}
           />
+        </motion.div>
+
+        {/* Email Contact */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="flex flex-col items-center gap-4 text-white/80"
+        >
+          <span className="text-lg">Prefer email?</span>
+          <a
+            href="mailto:samiyohannes@junocybersecurity.com"
+            className="flex items-center gap-2 text-white hover:text-[#E0C36C] transition-colors duration-300 text-lg font-medium group"
+          >
+            <Mail className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
+            samiyohannes@junocybersecurity.com
+          </a>
         </motion.div>
       </div>
     </section>

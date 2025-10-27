@@ -34,7 +34,7 @@ export default function Footer() {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="mailto:hello@usejuno.co"
+                href="mailto:samiyohannes@junocybersecurity.com"
                 className="w-10 h-10 rounded-full bg-gray-100 hover:bg-[#00986E] text-[#0A4733] hover:text-white transition-all duration-300 flex items-center justify-center group"
               >
                 <Mail className="w-5 h-5" />

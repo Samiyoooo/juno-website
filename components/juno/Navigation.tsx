@@ -87,7 +87,7 @@ export default function Navigation() {
                 size="sm"
                 className="bg-[#00986E] hover:bg-[#00B388] text-white rounded-full px-6"
               >
-                Book a Call
+                Contact Us
               </Button>
             </div>
 
@@ -134,7 +134,7 @@ export default function Navigation() {
                 onClick={() => scrollToSection("#contact")}
                 className="w-full bg-[#00986E] hover:bg-[#00B388] text-white rounded-full"
               >
-                Book a Call
+                Contact Us
               </Button>
             </div>
           </motion.div>
